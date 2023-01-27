@@ -1,0 +1,31 @@
+.edit-delete-btn{
+    text-decoration: none;
+}
+
+.edit-delete-icon{
+    height: 20px;
+}
+
+.product-card:hover{
+    transform: scale(1.02);
+    transition: transform 0.18s ease-in-out;
+}
+
+.price-tag{
+    display: inline-block;
+    background-color: #ffc107;
+    padding: 0px 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.category-tag{
+    display: inline-block;
+    background-color: #caffe8;
+    padding: 0px 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    font-style: italic;
+}

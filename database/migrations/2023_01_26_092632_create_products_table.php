@@ -18,6 +18,11 @@ return new class extends Migration
             $table->string("name");
             $table->string("category");
             $table->integer("price");
+            $table->string("description");
+            $table->string("brand");
+            $table->string("type");
+            $table->string("reviews")->nullable();
+            $table->string("featured");
             $table->string("image");
             $table->timestamps();
         });

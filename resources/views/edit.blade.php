@@ -12,7 +12,7 @@
 
 <body>
     <div class="container d-flex justify-content-center">
-        <form action="/update" class="w-50" method="post" enctype="multipart/form-data">
+        <form action="/shop/update" class="w-50" method="post" enctype="multipart/form-data">
             @csrf
             <h4 class="mt-4 mb-4">Update Existing Product</h4>
             <input type="hidden" name="id" value={{$product["id"]}}>

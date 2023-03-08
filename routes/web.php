@@ -14,20 +14,30 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get("/", function(){
+    return view("main-page");
+});
 
-Route::get("/add", function(){
+Route::get("/shop/add", function(){
     return view("add");
 });
 
-Route::get("/", [ProductController::class, "showProducts"]);
+Route::get("/brand/{brandName}", [ProductController::class, "brandFilter"]);
 
-Route::post("/add", [ProductController::class, "addProduct"]);
+Route::get("/product-type/{type}", [ProductController::class, "productTypeFilter"]);
 
-Route::get("/delete/{id}", [ProductController::class, "deleteProduct"]);
+Route::get("/concerns/{concern}", [ProductController::class, "concernFilter"]);
 
-Route::get("/edit/{id}", [ProductController::class, "editProduct"]);
+Route::get("/shop", [ProductController::class, "showProducts"]);
 
-Route::post("/update", [ProductController::class, "updateProduct"]);
+Route::get("/shop/filter", [ProductController::class, "filterProducts"]);
+
+Route::post("/shop/add", [ProductController::class, "addProduct"]);
+
+Route::get("/shop/delete/{id}", [ProductController::class, "deleteProduct"]);
+
+Route::get("/shop/edit/{id}", [ProductController::class, "editProduct"]);
+
+Route::post("/shop/update", [ProductController::class, "updateProduct"]);
+
+Route::get("/shop/product/{id}", [ProductController::class, "viewProduct"]);

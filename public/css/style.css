@@ -1,0 +1,97 @@
+.edit-delete-btn{
+    text-decoration: none;
+}
+
+.edit-delete-icon{
+    height: 20px;
+}
+
+.product-card:hover{
+    transform: scale(1.02);
+    transition: transform 0.18s ease-in-out;
+}
+
+.price-tag{
+    display: inline-block;
+    background-color: #ffc107;
+    padding: 0px 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.brand-tag{
+    display: inline-block;
+    background-color: #ffcaca;
+    padding: 0px 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.type-tag{
+    display: inline-block;
+    background-color: #caffe8;
+    padding: 0px 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.featured-section{
+    background-color: rgb(230, 255, 253);
+}
+
+.card-img-top-display{
+    width: 50vw;
+    height: 50vh;
+}
+
+.product-view-page{
+    display: flex;
+}
+
+.offerbanner{
+    height: 100px;
+}
+
+.main-icons{
+    width: 80px;
+    height: 80px;
+}
+
+.health-box{
+    width: 150px;
+    margin: 20px;
+    margin-right: 40px;
+    background-color: #fff672;
+    padding: 10px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.brand-box{
+    width: 150px;
+    margin: 20px;
+    margin-right: 40px;
+    background-color: #f7cbff;
+    padding: 10px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.type-box{
+    width: 150px;
+    margin: 20px;
+    margin-right: 40px;
+    background-color: #d5ffcb;
+    padding: 10px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.links{
+    text-decoration: none;
+}
